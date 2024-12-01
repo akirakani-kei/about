@@ -1,2 +1,2 @@
 # about
-small website with my links &amp; info
+https://akirakani-kei.github.io/about
