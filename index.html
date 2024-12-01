@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>about - akirakani kei</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono" rel="stylesheet">
+  <link rel="icon" href=".png" type="image/x-icon">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- main content -->
+    <div class="main-content">
+      <div class="container">
+        <div class="profile">
+          <img
+            src="https://ugc.production.linktr.ee/a9f16d18-0deb-41d9-be7c-83d499cb6a1c_CHTSZi-kJf1wNadFCEM8Tq1iT9WRN4VRpH8hUrHO0yLf8U2PACQ4vVxHFENb0b7d-XXtybiUI00-s800-c-k-c0x00ffffff-no-.jpeg?io=true&size=avatar-v3_0"
+            alt="Profile Picture" class="profile-picture">
+          <h1>kei</h1>
+          <p>musician/guitarist<br>occasional programmer<br>links & info below</p>
+          <div class="icons">
+            <a href="https://youtube.com/c/axizzz" target="_blank" class="icon" data-tooltip="YouTube">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/kei.kwrt/" target="_blank" class="icon" data-tooltip="Instagram">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://tiktok.com/@akyakyakei" target="_blank" class="icon" data-tooltip="TikTok">
+              <i class="fab fa-tiktok"></i>
+            </a>
+            <a href="https://twitter.com/attrqcted_" target="_blank" class="icon" data-tooltip="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div class="links">
+          <a href="https://youtube.com/c/axizzz" target="_blank" class="button">
+            <i class="fab fa-youtube"></i> YouTube
+          </a>
+          <a href="https://www.instagram.com/kei.kwrt/" target="_blank" class="button">
+            <i class="fab fa-instagram"></i> Instagram
+          </a>
+          <a href="https://tiktok.com/@akyakyakei" target="_blank" class="button">
+            <i class="fab fa-tiktok"></i> TikTok
+          </a>
+          <a href="https://twitter.com/attrqcted_" target="_blank" class="button">
+            <i class="fab fa-twitter"></i> Twitter
+          </a>
+          <a href="#" class="button">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <p class="more-info" id="more-info-toggle"><i>more info</i></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- extra -->
+    <div class="extra-content">
+      <div class="info-container">
+        <h2>additional info</h2>
+        <p>
+          my projects: 
+          <a href="https://github.com/akirakani-kei/inithook" target="_blank">inithook</a>, 
+          <a href="https://github.com/akirakani-kei/fillhack" target="_blank">fillhack</a>, 
+          <a href="https://github.com/akirakani-kei/dotfiles" target="_blank">dotfiles</a>
+        </p>
+        <p id="time-sync">
+          your <span id="user-time"></span> is my <span id="romania-time"></span>
+        </p>
+        <a id="back-button" class="button">Back</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function updateTimeSync() {
+      const userTimeElement = document.getElementById('user-time');
+      const romaniaTimeElement = document.getElementById('romania-time');
+      
+      const now = new Date();
+      
+      let userHours = now.getHours();
+      const userMinutes = now.getMinutes();
+      const ampm = userHours >= 12 ? 'pm' : 'am';
+      userHours = userHours % 12;
+      userHours = userHours ? userHours : 12; 
+      const formattedUserTime = `${userHours}:${userMinutes < 10 ? '0' + userMinutes : userMinutes} ${ampm}`;
+      
+      userTimeElement.textContent = formattedUserTime;
+
+      const romaniaTime = new Intl.DateTimeFormat('en-GB', {
+        timeZone: 'Europe/Bucharest',
+        hour: 'numeric',
+        minute: '2-digit',
+        hour12: true,
+      }).format(now);
+      
+      romaniaTimeElement.textContent = romaniaTime;
+      
+      requestAnimationFrame(updateTimeSync);
+    }
+    
+    updateTimeSync();
+  </script>
+</body>
+</html>

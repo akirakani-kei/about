@@ -1,0 +1,185 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'JetBrains Mono', monospace;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.page-wrapper {
+  display: flex;
+  width: 200%;
+  transition: transform 0.8s ease; 
+  height: 100vh;
+}
+
+.main-content,
+.extra-content {
+  width: 50%;
+  height: 100%;
+  flex-shrink: 0;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content {
+  text-align: center;
+}
+
+.extra-content {
+  background-color: #000;
+  text-align: left;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+}
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 5px 0;
+  font-size: 24px;
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.icons {
+  margin: 10px 0;
+}
+
+.icon {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+}
+
+.icon:hover {
+  color: #aaa;
+}
+
+.icon::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  display: none;
+  white-space: nowrap;
+}
+
+.icon:hover::after {
+  display: block;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin: 5px 0;
+  width: 200px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.button i {
+  font-size: 18px;
+}
+
+.button:hover {
+  filter: brightness(0.7);
+}
+
+.more-info {
+  font-size: 14px;
+  color: #aaa;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 180px;
+  transition: color 0.3s;
+}
+
+.more-info:hover {
+  color: #fff;
+}
+
+.info-container {
+  width: 90%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.extra-content .info-container {
+  padding: 20px;
+}
+
+.extra-content h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.extra-content p {
+  margin-bottom: 10px;
+  color: #ddd;
+}
+
+#back-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+#back-button:hover {
+  background-color: #555;
+}
+
+a {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+a:visited {
+  color: #fff; 
+}
+
+a:hover {
+  color: #aaa; 
+}
