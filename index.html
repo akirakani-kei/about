@@ -4,66 +4,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>about - akirakani kei</title>
+
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono" rel="stylesheet">
   <link rel="icon" href="assets/kw.png" type="image/x-icon">
 
-<!-- discord -->
-<meta property="og:title" content="about - akirakani kei">
-<meta property="og:description" content="small website with my links & contact info">
-<meta property="og:image" content="https://raw.githubusercontent.com/akirakani-kei/about/refs/heads/main/assets/kw-thumb.png">
-<meta property="og:url" content="https://akirakani-kei.github.io/about/">
-<meta name="theme-color" content="#3b344a">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="en_US">
+  <!-- discord -->
+  <meta property="og:title" content="about - akirakani kei">
+  <meta property="og:description" content="small website with my links & contact info">
+  <meta property="og:image" content="https://raw.githubusercontent.com/akirakani-kei/about/refs/heads/main/assets/kw-thumb.png">
+  <meta property="og:url" content="https://akirakani-kei.github.io/about/">
+  <meta name="theme-color" content="#3b344a">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
 
-<!-- twitter -->
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about - akirakani kei">
-<meta name="twitter:description" content="small website with my links & contact info">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/akirakani-kei/about/refs/heads/main/assets/kw-thumb.png">
+  <!-- twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="about - akirakani kei">
+  <meta name="twitter:description" content="small website with my links & contact info">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/akirakani-kei/about/refs/heads/main/assets/kw-thumb.png">
 
-<!-- mobile thing -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 </head>
+
 <body>
   <div class="page-wrapper">
-    <!-- main content -->
+
     <div class="main-content">
       <div class="container">
         <div class="profile">
-          <img
-            src="assets/icon.png"
-            alt="Profile Picture" class="profile-picture">
+          <img src="assets/icon.png" alt="Profile Picture" class="profile-picture">
+
           <h1>kei</h1>
-          <p>musician/guitarist<br>occasional programmer<br>links & info below</p>
+          <p>
+            musician/guitarist<br>
+            occasional programmer<br>
+            links & info below
+          </p>
+
+          <!-- social icons -->
           <div class="s">
             <a href="https://youtube.com/c/axizzz" target="_blank" class="icon" data-tooltip="YouTube">
               <i class="fab fa-youtube"></i>
-            </a>            
-            <a href="https://www.instagram.com/kei.kwrt/" target="_blank" class="icon" data-tooltip="Instagram">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://tiktok.com/@akyakyakei" target="_blank" class="icon" data-tooltip="TikTok">
-              <i class="fab fa-tiktok"></i>
             </a>
             <a href="https://twitter.com/attrqcted_" target="_blank" class="icon" data-tooltip="Twitter">
               <i class="fab fa-twitter"></i>
             </a>
           </div>
         </div>
+
         <div class="links">
           <a href="https://youtube.com/c/axizzz" target="_blank" class="button">
             <i class="fab fa-youtube"></i> YouTube
-          </a>
-          <a href="https://www.instagram.com/kei.kwrt/" target="_blank" class="button">
-            <i class="fab fa-instagram"></i> Instagram
-          </a>
-          <a href="https://tiktok.com/@akyakyakei" target="_blank" class="button">
-            <i class="fab fa-tiktok"></i> TikTok
           </a>
           <a href="https://twitter.com/attrqcted_" target="_blank" class="button">
             <i class="fab fa-twitter"></i> Twitter
@@ -71,81 +64,118 @@
           <a href="https://github.com/akirakani-kei" class="button">
             <i class="fab fa-github"></i> GitHub
           </a>
+
+          <!--youtube video-->
+          <div id="latest-video" class="latest-video">
+            <p style="margin-bottom: 6px;">my latest video</p>
+            <a id="latest-video-link" href="#" target="_blank">
+              <img id="latest-video-thumb" src="" alt="my latest video">
+              <p id="latest-video-title"></p>
+            </a>
+          </div>
+
           <p class="more-info" id="more-info-toggle"><i>more info</i></p>
         </div>
       </div>
     </div>
 
-<div class="extra-content">
+    <div class="extra-content">
       <div class="info-container">
         <h2>additional info</h2>
-	<br>
+        <br>
+
         <p>my projects:</p>
+
         <p>
-          <strong>scripts:</strong> 
-          <a href="https://github.com/akirakani-kei/inithook" target="_blank">inithook</a>, 
-          <a href="https://github.com/akirakani-kei/gf-script" target="_blank">gf-script</a>
-        </p>
-        <p>
-          <strong>configs:</strong> 
-          <a href="https://github.com/akirakani-kei/dotfiles" target="_blank">dotfiles</a>, 
-          <a href="https://github.com/akirakani-kei/nvim-conf" target="_blank">nvim-conf</a>, 
-          <a href="https://github.com/akirakani-kei/msimodern14-b10mw-hackintosh" target="_blank">msimodern14-b10mw-hackintosh</a>,
-          <a href="https://github.com/akirakani-kei/7950X-6650XT-B650M-Hackintosh/" target="_blank">7950X-6650XT-B650M-hackintosh</a>
-        </p>
-        <p>
-          <strong>coding projects:</strong> 
-          <a href="https://github.com/akirakani-kei/vis-sort" target="_blank">vis-sort</a>, 
+          <strong>coding projects:</strong>
+          <a href="https://github.com/akirakani-kei/FractalUI" target="_blank">fractalui (wip)</a>,
+          <a href="https://github.com/akirakani-kei/vis-sort" target="_blank">vis-sort</a>,
           <a href="https://github.com/akirakani-kei/fillhack" target="_blank">fillhack</a>
         </p>
+
         <p>
-          <strong>websites:</strong> 
-          <a href="https://github.com/akirakani-kei/about" target="_blank">about</a>, 
+          <strong>scripts:</strong>
+          <a href="https://github.com/akirakani-kei/inithook" target="_blank">inithook</a>,
+          <a href="https://github.com/akirakani-kei/gf-script" target="_blank">gf-script</a>
+        </p>
+
+        <p>
+          <strong>configs:</strong>
+          <a href="https://github.com/akirakani-kei/dotfiles" target="_blank">dotfiles</a>,
+          <a href="https://github.com/akirakani-kei/nvim-conf" target="_blank">nvim-conf</a>,
+          <a href="https://github.com/akirakani-kei/msimodern14-b10mw-hackintosh" target="_blank">msimodern14-b10mw-hackintosh</a>,
+          <a href="https://github.com/akirakani-kei/7950X-6650XT-B650M-Hackintosh/" target="_blank">7950X-6650XT-B650M-hackintosh</a>,
+          <a href="https://github.com/akirakani-kei/dotfiles-macbook" target="_blank">dotfiles-macbook</a>
+        </p>
+
+        <p>
+          <strong>websites:</strong>
+          <a href="https://github.com/akirakani-kei/about" target="_blank">about</a>,
           <a href="https://github.com/akirakani-kei/2pacalypse" target="_blank">2pacalypse</a>
         </p>
+
         <p>
-          <strong>databases:</strong> 
+          <strong>databases:</strong>
           <a href="https://github.com/akirakani-kei/distro-icons" target="_blank">distro-icons</a>
         </p>
-	<br>
+
+        <br>
+
         <p id="time-sync">
           your <span id="user-time"></span> is my <span id="romania-time"></span>
         </p>
+
         <a id="back-button" class="button">Back</a>
       </div>
     </div>
   </div>
 
   <script src="script.js"></script>
+
+  <!-- time sync -->
   <script>
     function updateTimeSync() {
       const userTimeElement = document.getElementById('user-time');
       const romaniaTimeElement = document.getElementById('romania-time');
-      
+
       const now = new Date();
-      
       let userHours = now.getHours();
       const userMinutes = now.getMinutes();
       const ampm = userHours >= 12 ? 'pm' : 'am';
-      userHours = userHours % 12;
-      userHours = userHours ? userHours : 12; 
-      const formattedUserTime = `${userHours}:${userMinutes < 10 ? '0' + userMinutes : userMinutes} ${ampm}`;
-      
-      userTimeElement.textContent = formattedUserTime;
+      userHours = userHours % 12 || 12;
 
-      const romaniaTime = new Intl.DateTimeFormat('en-GB', {
+      userTimeElement.textContent =
+        `${userHours}:${userMinutes < 10 ? '0' : ''}${userMinutes} ${ampm}`;
+
+      romaniaTimeElement.textContent = new Intl.DateTimeFormat('en-GB', {
         timeZone: 'Europe/Bucharest',
         hour: 'numeric',
         minute: '2-digit',
-        hour12: true,
+        hour12: true
       }).format(now);
-      
-      romaniaTimeElement.textContent = romaniaTime;
-      
+
       requestAnimationFrame(updateTimeSync);
     }
-    
+
     updateTimeSync();
+  </script>
+
+  <!-- latest youtube video fetch -->
+  <script>
+    fetch(
+      "https://api.rss2json.com/v1/api.json?rss_url=https://www.youtube.com/feeds/videos.xml?channel_id=UCIUv83vGgymlHxl_aiqNqrQ"
+    )
+      .then(res => res.json())
+      .then(data => {
+        const video = data.items[0];
+        if (!video) return;
+
+        document.getElementById("latest-video-link").href = video.link;
+        document.getElementById("latest-video-thumb").src = video.thumbnail;
+        document.getElementById("latest-video-title").textContent = video.title;
+      })
+      .catch(() => {});
   </script>
 </body>
 </html>
+
