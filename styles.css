@@ -183,3 +183,28 @@ a:visited {
 a:hover {
   color: #aaa; 
 }
+
+.latest-video {
+  margin: 18px auto 8px;
+  width: 200px; /* mobile */
+  text-align: left;
+}
+
+@media (min-width: 600px) {
+  .latest-video {
+    width: 240px;
+  }
+}
+
+.latest-video img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+
+.latest-video p {
+  font-size: 13px;
+  color: #aaa;
+  line-height: 1.4;
+}
+
