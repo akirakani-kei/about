@@ -1,6 +1,6 @@
 # about
 https://akirakani-kei.github.io/about <br> <br>
 small personal website i built as an alternative to carrd/linktree <br>
-*still a wip*
-![image](https://github.com/user-attachments/assets/c6e79266-8e01-4df9-9658-a454c82dee82)
-![image](https://github.com/user-attachments/assets/bc50b667-6f1b-45b9-90bf-28475351631e)
+
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/acb04500-0dc5-487f-9cfb-e682e634c50b" />
+<img width="1470" height="956" alt="image" src="https://github.com/user-attachments/assets/2f2c3c8a-d510-441b-b570-7f4ea10e9675" />
